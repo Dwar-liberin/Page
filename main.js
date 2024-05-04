@@ -166,7 +166,7 @@ const square_facebook_0e0ee02_iconGeometry = new THREE.PlaneGeometry(1, 0.3);
     
       
     const anchor =  mindThree.addAnchor(0);
-    anchor.group.add(target_imagef06c5e303f4)
+    //anchor.group.add(target_imagef06c5e303f4)
 anchor.group.add(video_asset_a412e52f8f1)
 anchor.group.add(logo_70d201a1_564870d20)
 anchor.group.add(logo_021dcff2_6a82021dc)
