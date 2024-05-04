@@ -47,77 +47,97 @@
 
   
     
-      const target_imagef06c5e303f4_iconGeometry = new THREE.PlaneGeometry(1, 1);
-   const target_imagef06c5e303f4_texture = await loadTexture("assets/Page.png");
-  const target_imagef06c5e303f4_image = new THREE.MeshBasicMaterial({
-      map: target_imagef06c5e303f4_texture,
+      const target_image209b7e1b90a_iconGeometry = new THREE.PlaneGeometry(1, 0.75);
+   const target_image209b7e1b90a_texture = await loadTexture("assets/Jockey-Juniors.png");
+  const target_image209b7e1b90a_image = new THREE.MeshBasicMaterial({
+      map: target_image209b7e1b90a_texture,
     });
-    const target_imagef06c5e303f4 = new THREE.Mesh(target_imagef06c5e303f4_iconGeometry, target_imagef06c5e303f4_image);
-    target_imagef06c5e303f4.scale.set(1, 1, 1);
-    target_imagef06c5e303f4.position.set(0, 0, 0);
-    target_imagef06c5e303f4.rotation.set(-0.001, 0, 0);
+    const target_image209b7e1b90a = new THREE.Mesh(target_image209b7e1b90a_iconGeometry, target_image209b7e1b90a_image);
+    target_image209b7e1b90a.scale.set(1, 1, 1);
+    target_image209b7e1b90a.position.set(0, 0, 0);
+    target_image209b7e1b90a.rotation.set(-0.001, 0, 0);
     
 
-    const video_asset_a412e52f8f1_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
+    const video_asset_a0a53c5e28f_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
 
-    const video_asset_a412e52f8f1_Item0Video = await loadVideo("assets/Page.mp4");
+    const video_asset_a0a53c5e28f_Item0Video = await loadVideo("assets/Jockey-Juniors.mp4");
 
-    const video_asset_a412e52f8f1_Item0VideoTexture = new THREE.VideoTexture(
-      video_asset_a412e52f8f1_Item0Video
+    const video_asset_a0a53c5e28f_Item0VideoTexture = new THREE.VideoTexture(
+      video_asset_a0a53c5e28f_Item0Video
     );
 
-    const video_asset_a412e52f8f1_Item0VideoMaterial = new THREE.MeshBasicMaterial({
-      map: video_asset_a412e52f8f1_Item0VideoTexture,
+    const video_asset_a0a53c5e28f_Item0VideoMaterial = new THREE.MeshBasicMaterial({
+      map: video_asset_a0a53c5e28f_Item0VideoTexture,
     });
 
-     const video_asset_a412e52f8f1 = new THREE.Mesh(
-      video_asset_a412e52f8f1_planeGeometry,
-      video_asset_a412e52f8f1_Item0VideoMaterial
+     const video_asset_a0a53c5e28f = new THREE.Mesh(
+      video_asset_a0a53c5e28f_planeGeometry,
+      video_asset_a0a53c5e28f_Item0VideoMaterial
     );
 
-  video_asset_a412e52f8f1.position.set(0, 0, 0);
+  video_asset_a0a53c5e28f.position.set(0, -0.3, 0.7);
 
   const isIOS = navigator.appVersion.indexOf("Mac") != -1 ? true : false;
 
-  video_asset_a412e52f8f1_Item0Video.muted=isIOS
-  video_asset_a412e52f8f1_Item0Video.loop=true;
+  video_asset_a0a53c5e28f_Item0Video.muted=isIOS
+  video_asset_a0a53c5e28f_Item0Video.loop=true;
   
-  video_asset_a412e52f8f1.scale.set(2, 2, 2);
+  video_asset_a0a53c5e28f.scale.set(1.6, 1.6, 1.6);
 
-    video_asset_a412e52f8f1.rotation.set(-0.001, 0, 0);
+    video_asset_a0a53c5e28f.rotation.set(-0.001, 0, 0);
 
     
   
-const logo_70d201a1_564870d20_iconGeometry = new THREE.CircleGeometry(0.5,32);
-   const logo_70d201a1_564870d20_texture = await loadTexture("assets/circle-web-sm_114.png");
-  const logo_70d201a1_564870d20_image = new THREE.MeshBasicMaterial({
-      map: logo_70d201a1_564870d20_texture,
+const logo_ca8b8c0e_c6cbca8b8_iconGeometry = new THREE.CircleGeometry(0.5,32);
+   const logo_ca8b8c0e_c6cbca8b8_texture = await loadTexture("assets/circle-web-sm_114.png");
+  const logo_ca8b8c0e_c6cbca8b8_image = new THREE.MeshBasicMaterial({
+      map: logo_ca8b8c0e_c6cbca8b8_texture,
     });
-    const logo_70d201a1_564870d20 = new THREE.Mesh(logo_70d201a1_564870d20_iconGeometry, logo_70d201a1_564870d20_image);
-    logo_70d201a1_564870d20.scale.set(0.4, 0.4, 1);
-    logo_70d201a1_564870d20.position.set(-0.8, -1, 0);
-    logo_70d201a1_564870d20.rotation.set(-0.001, 0, 0);
-    logo_70d201a1_564870d20.userData.clickable = true
-const logo_021dcff2_6a82021dc_iconGeometry = new THREE.CircleGeometry(0.5,32);
-   const logo_021dcff2_6a82021dc_texture = await loadTexture("assets/circle-mail-sm_125.png");
-  const logo_021dcff2_6a82021dc_image = new THREE.MeshBasicMaterial({
-      map: logo_021dcff2_6a82021dc_texture,
+    const logo_ca8b8c0e_c6cbca8b8 = new THREE.Mesh(logo_ca8b8c0e_c6cbca8b8_iconGeometry, logo_ca8b8c0e_c6cbca8b8_image);
+    logo_ca8b8c0e_c6cbca8b8.scale.set(0.4, 0.4, 1);
+    logo_ca8b8c0e_c6cbca8b8.position.set(-0.8, -0.9, 0);
+    logo_ca8b8c0e_c6cbca8b8.rotation.set(-0.001, 0, 0);
+    logo_ca8b8c0e_c6cbca8b8.userData.clickable = true
+const logo_c913e25d_0364c913e_iconGeometry = new THREE.CircleGeometry(0.5,32);
+   const logo_c913e25d_0364c913e_texture = await loadTexture("assets/circle-fb-sm_107.svg");
+  const logo_c913e25d_0364c913e_image = new THREE.MeshBasicMaterial({
+      map: logo_c913e25d_0364c913e_texture,
     });
-    const logo_021dcff2_6a82021dc = new THREE.Mesh(logo_021dcff2_6a82021dc_iconGeometry, logo_021dcff2_6a82021dc_image);
-    logo_021dcff2_6a82021dc.scale.set(0.4, 0.4, 1);
-    logo_021dcff2_6a82021dc.position.set(0.8, -1, 0);
-    logo_021dcff2_6a82021dc.rotation.set(-0.001, 0, 0);
-    logo_021dcff2_6a82021dc.userData.clickable = true
-const square_facebook_0e0ee02_iconGeometry = new THREE.PlaneGeometry(1, 0.3);
-   const square_facebook_0e0ee02_texture = await loadTexture("assets/square-facebook_102.svg");
-  const square_facebook_0e0ee02_image = new THREE.MeshBasicMaterial({
-      map: square_facebook_0e0ee02_texture,
+    const logo_c913e25d_0364c913e = new THREE.Mesh(logo_c913e25d_0364c913e_iconGeometry, logo_c913e25d_0364c913e_image);
+    logo_c913e25d_0364c913e.scale.set(0.4, 0.4, 1);
+    logo_c913e25d_0364c913e.position.set(0.3, 0, 0);
+    logo_c913e25d_0364c913e.rotation.set(-0.001, 0, 0);
+    
+const square_facebook_a6a6fae_iconGeometry = new THREE.PlaneGeometry(1, 0.3);
+   const square_facebook_a6a6fae_texture = await loadTexture("assets/square-facebook_102.svg");
+  const square_facebook_a6a6fae_image = new THREE.MeshBasicMaterial({
+      map: square_facebook_a6a6fae_texture,
     });
-    const square_facebook_0e0ee02 = new THREE.Mesh(square_facebook_0e0ee02_iconGeometry, square_facebook_0e0ee02_image);
-    square_facebook_0e0ee02.scale.set(1, 1, 1);
-    square_facebook_0e0ee02.position.set(0, -1, 0);
-    square_facebook_0e0ee02.rotation.set(-0.001, 0, 0);
-    square_facebook_0e0ee02.userData.clickable = true
+    const square_facebook_a6a6fae = new THREE.Mesh(square_facebook_a6a6fae_iconGeometry, square_facebook_a6a6fae_image);
+    square_facebook_a6a6fae.scale.set(0.4, 0.4, 1);
+    square_facebook_a6a6fae.position.set(0.4, -0.4, 0);
+    square_facebook_a6a6fae.rotation.set(-0.001, 0, 0);
+    
+const square_facebook_5f5f880_iconGeometry = new THREE.PlaneGeometry(1, 0.3);
+   const square_facebook_5f5f880_texture = await loadTexture("assets/square-facebook_102.svg");
+  const square_facebook_5f5f880_image = new THREE.MeshBasicMaterial({
+      map: square_facebook_5f5f880_texture,
+    });
+    const square_facebook_5f5f880 = new THREE.Mesh(square_facebook_5f5f880_iconGeometry, square_facebook_5f5f880_image);
+    square_facebook_5f5f880.scale.set(0.9, 0.9, 0.9);
+    square_facebook_5f5f880.position.set(0, -0.9, 0);
+    square_facebook_5f5f880.rotation.set(-0.001, 0, 0);
+    
+const square_ins_sm_c6dac6da7_iconGeometry = new THREE.PlaneGeometry(1, 1);
+   const square_ins_sm_c6dac6da7_texture = await loadTexture("assets/square-ins-sm_108.svg");
+  const square_ins_sm_c6dac6da7_image = new THREE.MeshBasicMaterial({
+      map: square_ins_sm_c6dac6da7_texture,
+    });
+    const square_ins_sm_c6dac6da7 = new THREE.Mesh(square_ins_sm_c6dac6da7_iconGeometry, square_ins_sm_c6dac6da7_image);
+    square_ins_sm_c6dac6da7.scale.set(0.4, 0.4, 1);
+    square_ins_sm_c6dac6da7.position.set(0.9, -0.8, 0);
+    square_ins_sm_c6dac6da7.rotation.set(-0.001, 0, 0);
+    square_ins_sm_c6dac6da7.userData.clickable = true
       
        document.body.addEventListener("click", (e) => {
     const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
@@ -140,23 +160,16 @@ const square_facebook_0e0ee02_iconGeometry = new THREE.PlaneGeometry(1, 0.3);
       if (o.userData.clickable) window.showLoadingScreen();
 
       
-      if (o.userData.clickable && o === logo_70d201a1_564870d20) {
+      if (o.userData.clickable && o === logo_ca8b8c0e_c6cbca8b8) {
         setTimeout(()=>{
-          window.location.href = "https://www.jockey.in/"
+          window.location.href = "https://www.jockey.in/pages/kids"
         },100)
         }
       
 
-      if (o.userData.clickable && o === logo_021dcff2_6a82021dc) {
+      if (o.userData.clickable && o === square_ins_sm_c6dac6da7) {
         setTimeout(()=>{
-          window.location.href = "mailto:wecare@jockeyindia.com"
-        },100)
-        }
-      
-
-      if (o.userData.clickable && o === square_facebook_0e0ee02) {
-        setTimeout(()=>{
-          window.location.href = "https://www.facebook.com/jockeyindia"
+          window.location.href = "https://www.instagram.com/jockeyindia/?hl=en"
         },100)
         }
       
@@ -166,20 +179,22 @@ const square_facebook_0e0ee02_iconGeometry = new THREE.PlaneGeometry(1, 0.3);
     
       
     const anchor =  mindThree.addAnchor(0);
-    //anchor.group.add(target_imagef06c5e303f4)
-anchor.group.add(video_asset_a412e52f8f1)
-anchor.group.add(logo_70d201a1_564870d20)
-anchor.group.add(logo_021dcff2_6a82021dc)
-anchor.group.add(square_facebook_0e0ee02)
+    anchor.group.add(target_image209b7e1b90a)
+anchor.group.add(video_asset_a0a53c5e28f)
+anchor.group.add(logo_ca8b8c0e_c6cbca8b8)
+anchor.group.add(logo_c913e25d_0364c913e)
+anchor.group.add(square_facebook_a6a6fae)
+anchor.group.add(square_facebook_5f5f880)
+anchor.group.add(square_ins_sm_c6dac6da7)
 
 
       anchor.onTargetFound = () => {
-      video_asset_a412e52f8f1_Item0Video.play();
+      video_asset_a0a53c5e28f_Item0Video.play();
     };
 
 
     anchor.onTargetLost = () => {
-       video_asset_a412e52f8f1_Item0Video.pause();
+       video_asset_a0a53c5e28f_Item0Video.pause();
     }
       
     await mindThree.start();
