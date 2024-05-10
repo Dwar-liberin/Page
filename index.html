@@ -32,6 +32,10 @@
             display: none;
         }
 
+        .logo {
+            margin-bottom: 6rem;
+        }
+
 
 
         @keyframes skeleton-loading {
@@ -50,6 +54,10 @@
 
 
         .logo {
+            width: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             animation: skeleton-loading 2s ease-in-out infinite;
         }
 
@@ -89,35 +97,32 @@
     </style>
     <script>
 
-    function showLoadingScreen() {
-        document.getElementById('loading-screen').style.display = 'flex';
-        setTimeout(()=>{
-            window.hideLoadingScreen()
-        },3000)
-    }
+        function showLoadingScreen() {
+            document.getElementById('loading-screen').style.display = 'flex';
+            setTimeout(() => {
+                window.hideLoadingScreen()
+            }, 3000)
+        }
 
 
-    function hideLoadingScreen() {
-        document.getElementById('loading-screen').style.display = 'none';
-    }
+        function hideLoadingScreen() {
+            document.getElementById('loading-screen').style.display = 'none';
+        }
 
     </script>
 </head>
 
 <body>
 
-<div id="scanning-overlay" class="hidden">
-    <img width="300px" height="300px" class="logo"
-    src="https://raw.githubusercontent.com/Dwar-liberin/blob/main/DwAR%201.png" alt="logo" />
-</div>
+    <div id="scanning-overlay" class="hidden">
+        <img class="logo" src="https://raw.githubusercontent.com/Dwar-liberin/blob/main/logoDwar.png" alt="logo" />
+    </div>
 
-<div id="loading-screen">
-    <div class="loader"></div>
-</div>
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
 
 
 </body>
 
 </html>
-
-
